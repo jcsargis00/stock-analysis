@@ -5,46 +5,13 @@ This project creates a report to analyze green stocks performance in 2017 and 20
 ## Results
 The first report produced results, but seemed to have room for improvement in terms of more elegant programming,
 less lines of  codes and more efficient run times.  Although it executed and produced accurate report results, by refactoring the code, run times were reduced signficantly, whilst producing the same accurate results.
-Refactoring included creation of arrays to reduce nested loop execution times.   For example, a snippet of the inital code with nested loops looked like this:
-`For i = 0 To 11
-       ticker = tickers(i)
-       totalVolume = 0
-       '5) loop through rows in the data
-       'Worksheets(yearValue).Activate
-       For j = 2 To RowCount
-           '5a) Get total volume for current ticker
+Refactoring included creation of arrays to reduce nested loop execution times.   For example, the inital code used two nested loops, going through the entire data sheet for each stock.  The second report used arrays, allowing the code to set up the tickers and loop through the data one time.  The resulting code ran over 6 times faster.
 
-           If ActiveSheet.Cells(j, 1).Value = ticker Then
-               'test = ActiveSheet.Cells(j, 8).Value
-               totalVolume = totalVolume + ActiveSheet.Cells(j, 8).Value
-
-           End If
-           Worksheets(yearValue).Activate
-           '5b) get starting price for current ticker
-           If ActiveSheet.Cells(j - 1, 1).Value <> ticker And ActiveSheet.Cells(j, 1).Value = ticker Then
-
-               startingPrice = ActiveSheet.Cells(j, 6).Value
-
-           End If
-
-           '5c) get ending price for current ticker
-           If ActiveSheet.Cells(j + 1, 1).Value <> ticker And ActiveSheet.Cells(j, 1).Value = ticker Then
-
-               endingPrice = ActiveSheet.Cells(j, 6).Value
-
-           End If
-       Next j
-       '6) Output data for current ticker
-       Worksheets("All Stocks Analysis").Activate
-       ActiveSheet.Cells(4 + i, 1).Value = ticker
-       ActiveSheet.Cells(4 + i, 2).Value = totalVolume
-       ActiveSheet.Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
-
-   Next i
+  
 * Examples from the reports
 ## Images showing table and runtime
 ### VBA_Challenge 2017 before refactoring
-![VBA 2017](resources/VBA_Challenge_2017before.PNG)
+![VBA 2017 with nested do loops took 0.84375 seconds to run.](resources/VBA_Challenge_2017before.PNG)
 ### VBA_CHallenge 2018 before refactoring
 ![VBA_Challenge 2018 with nested do loops took 0.84375 seconds to run.](resources/VBA_Challenge_2018before.PNG)
 ### VBA_Challenge 2017 after refactoring
