@@ -12,11 +12,11 @@ Refactoring included creation of arrays to reduce nested loop execution times.  
 # Images showing table and runtime
 ### VBA_Challenge 2017 before refactoring
 ![VBA 2017 with nested do loops took 0.84375 seconds to run.](resources/VBA_Challenge_2017before.PNG)
-### VBA_CHallenge 2018 before refactoring
+### VBA_Challenge 2018 before refactoring - note much faster code execution time
 ![VBA_Challenge 2018 with nested do loops took 0.84375 seconds to run.](resources/VBA_Challenge_2018before.PNG)
-### VBA_Challenge 2017 after refactoring
+### VBA_Challenge 2017 after refactoring - note much faster code execution time
 ![VBA_Challenge 2017 took 0.125 seconds to run.](resources/VBA_Challenge_2017.PNG)
-### VBA_CHallenge 2018 after refactoring 
+### VBA_Challenge 2018 after refactoring 
 ![VBA_Challenge 2017 took 0.125 seconds to run.](resources/VBA_Challenge_2018.PNG)
 ## Summary
 ### Advantages and Disadvantages of refactoring code
@@ -27,6 +27,6 @@ My approach to refactoring this code was to go after less nesting levels (do loo
 
 ### How do these pros and cons apply to refactoring the original VBA script.
 Pros: More efficient reporting times, less coding.  Efficient run times will be even more important when dealing with very large data sets, especially during coding, if a mistake is introduced and the code has to be run multiple times to find the bug.
-Cons: By setting up the tickers in an array to get rid of the nested loops, it was very easy to mix up the variables and introduce mistakes.  Additionally, by refactoring the code, even though there was less code, it was a little more complicated to follow how each variable was assigned.  I used the debug facilities to trace the variable assignments when the first reports of the refactored code volumes did not initially match the volumes of the first report.    
+Cons: By setting up the tickers in an array to get rid of the nested loops, it was very easy to mix up the variables and introduce mistakes.  Additionally, by refactoring the code, even though there was less code, it was a little more complicated to follow how each variable was assigned with names like tickers(tickerIndex).  I used the debug facilities to trace the variable assignments when the first reports of the refactored code volumes did not initially match the volumes of the first report.  Lots and lots of retesting and patience was required.
 
 
