@@ -1,5 +1,5 @@
-# stock-analysis
-## *Stock analysis for Steve*
+## stock-analysis module 2 assignment
+# *Stock analysis for Steve*
 ## Project Overview: Purpose of this analysis
 ## Results
 ### Images showing table and runtime
