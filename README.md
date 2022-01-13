@@ -8,7 +8,7 @@ less lines of  codes and more efficient run times.  Although it executed and pro
 Refactoring included creation of arrays to reduce nested loop execution times.   For example, the inital code used two nested loops, going through the entire data sheet for each stock.  The second report used arrays, allowing the code to set up the tickers as an array and then loop through the data one time setting up the volume and % return for each stock.  The resulting code in the 2nd report ran over 6 times faster.
 
   
-##Examples from the reports
+## Examples from the reports
 # Images showing table and runtime
 ### VBA_Challenge 2017 before refactoring
 ![VBA 2017 with nested do loops took 0.84375 seconds to run.](resources/VBA_Challenge_2017before.PNG)
