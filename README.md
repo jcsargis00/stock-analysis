@@ -1,5 +1,5 @@
-# Stock analysis for Steve
-## *Stock-analysis module 2 assignment*
+# Stock Analysis Reports for Steve
+### *Stock-analysis module 2 assignment*
 ## Project Overview: Purpose of this analysis
 This project creates a report to analyze green stocks performance in 2017 and 2018.  The report is for Steve to advise his parents on investing in worthy "green" stocks.  The report was created with Excel, Visual Basic Application (VBA) and macros.  The initial report focused on stock DQ, a stock his parents were interested in. The final report analyzes an additional 11 "green" stock in terms of volume, starting price and ending price.
 ## Results
