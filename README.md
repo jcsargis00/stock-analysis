@@ -21,7 +21,7 @@ Refactoring included creation of arrays to reduce nested loop execution times.  
 ### Advantages and Disadvantages of refactoring code
 The advantage of refactoring code is to produce better, working code, designed to do what it needs to do without extra complexity.  The disadvantage is that when refactoring, new problems can be introduced resulting in a lot of time required to fix the new problems and retest to get the code back to working.
 ### Advantages and Disadvantages of the original and refactored Green Stocks VBA Script
-Refactoring of this code was involved using less nesting levels (do loops), reducing complexity in the conditional statements and reducing the code line count.  There were advantages and disadvantages to this strategy.
+Refactoring of this code involved using less nesting levels (do loops), reducing complexity in the conditional statements and reducing the code line count.  There were advantages and disadvantages to this strategy.
 #### Advantages:
 *  Reuse of much of the code written for the stock_analysis project in terms of the logic for determining how to track the volume, starting price and ending price for each ticker. 
 * Reuse of code to make the report available for multiple years with a macro button so Steve could run the report for either year 2017 or 2018.
