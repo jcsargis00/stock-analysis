@@ -4,17 +4,17 @@
 This project creates a report to analyze green stocks performance in 2017 and 2018.  The report is for Steve to advise his parents on investing in worthy "green" stocks.  The report was created with Excel, Visual Basic Application (VBA) and macros.  The initial report focused on stock DQ, a stock his parents were interested in. The final report analyzes an additional 11 "green" stock in terms of volume, starting price and ending price.
 ## Results
 The first report produced results, but seemed to have room for improvement in terms of more elegant programming,
-less lines of  codes and more efficient run times.  Although it executed and produced accurate report results, by refactoring the code, run times were reduced signficantly whilst producing the same accurate results.
+less lines of  codes and more efficient run times.  Although it executed and produced accurate report results, by refactoring the code, run times were reduced signficantly, whilst producing the same accurate results.
 Refactoring included creation of arrays to reduce nested loop execution times.   For example, a snippet of the inital code with nested loops looked like this:
 
-* 4) Loop through tickers
+*  'Loop through tickers
    For i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
-       '5) loop through rows in the data
+       'Loop through rows in the data
        'Worksheets(yearValue).Activate
-       For j = 2 To RowCount
-           '5a) Get total volume for current ticker
+        For j = 2 To RowCount
+    'Get total volume for current ticker
 
            If ActiveSheet.Cells(j, 1).Value = ticker Then
                'test = ActiveSheet.Cells(j, 8).Value
@@ -22,14 +22,14 @@ Refactoring included creation of arrays to reduce nested loop execution times.  
 
            End If
            Worksheets(yearValue).Activate
-           '5b) get starting price for current ticker
+    'Get starting price for current ticker
            If ActiveSheet.Cells(j - 1, 1).Value <> ticker And ActiveSheet.Cells(j, 1).Value = ticker Then
 
                startingPrice = ActiveSheet.Cells(j, 6).Value
 
            End If
 
-           '5c) get ending price for current ticker
+    'Get ending price for current ticker
            If ActiveSheet.Cells(j + 1, 1).Value <> ticker And ActiveSheet.Cells(j, 1).Value = ticker Then
 
                endingPrice = ActiveSheet.Cells(j, 6).Value
