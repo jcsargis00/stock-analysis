@@ -31,7 +31,7 @@ Refactoring of this code involved using less nesting levels (do loops), reducing
 
 ### How do these pros and cons apply to refactoring the original VBA script.
 #### Pros: 
-More efficient reporting times, less coding.  Efficient run times will be even more important when dealing with very large data sets, especially during coding, if a mistake is introduced and the code has to be run multiple times to find the bug.
+More efficient reporting times, less code to maintain.  Efficient run times will be even more important when dealing with very large data sets, especially during coding, if a mistake is introduced and the code has to be run multiple times to find the bug.
 #### Cons:
 By setting up the tickers in an array to get rid of the nested loops, it was very easy to mix up the variables and introduce mistakes.  Additionally, by refactoring the code, even though there was less code, it was a little more complicated to follow how each variable was assigned with names like tickers(tickerIndex).  I used the debug facilities to trace the variable assignments when the first reports of the refactored code volumes did not initially match the volumes of the first report.  Lots and lots of retesting and patience was required.
 
