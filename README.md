@@ -21,12 +21,17 @@ Refactoring included creation of arrays to reduce nested loop execution times.  
 ## Summary
 ### Advantages and Disadvantages of refactoring code
 My approach to refactoring this code was to go after less nesting levels (do loops), reduce complexity in the conditional statements and reduce the code line count.  Specific tasks included:
+#### Advantages:
 *  Reuse of much of the code written for the stock_analysis project in terms of the logic for determining how to track the volume, starting price and ending price for each ticker. 
 * Reuse of code to make the report available for multiple years with a macro button so Steve could run the report for either year 2017 or 2018.
+#### Disadvantages
 * By altering existing code, it's pretty easy to break what was working if you don't pay attention to every detail and keep a copy of the working code available to compare and contrast changes.
+* When the code breaks, there is a lot of retesting required.
 
 ### How do these pros and cons apply to refactoring the original VBA script.
-Pros: More efficient reporting times, less coding.  Efficient run times will be even more important when dealing with very large data sets, especially during coding, if a mistake is introduced and the code has to be run multiple times to find the bug.
-Cons: By setting up the tickers in an array to get rid of the nested loops, it was very easy to mix up the variables and introduce mistakes.  Additionally, by refactoring the code, even though there was less code, it was a little more complicated to follow how each variable was assigned with names like tickers(tickerIndex).  I used the debug facilities to trace the variable assignments when the first reports of the refactored code volumes did not initially match the volumes of the first report.  Lots and lots of retesting and patience was required.
+#### Pros: 
+More efficient reporting times, less coding.  Efficient run times will be even more important when dealing with very large data sets, especially during coding, if a mistake is introduced and the code has to be run multiple times to find the bug.
+#### Cons:
+By setting up the tickers in an array to get rid of the nested loops, it was very easy to mix up the variables and introduce mistakes.  Additionally, by refactoring the code, even though there was less code, it was a little more complicated to follow how each variable was assigned with names like tickers(tickerIndex).  I used the debug facilities to trace the variable assignments when the first reports of the refactored code volumes did not initially match the volumes of the first report.  Lots and lots of retesting and patience was required.
 
 
