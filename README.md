@@ -4,10 +4,13 @@
 ## Results
 ### Images showing table and runtime
 #### VBA_Challenge 2017 before refactoring
-![VBA_Challenge 2017 with nested do loops] (https://github.com/jcsargis00/stock-analysis/blob/main/resources/VBA_Challenge_2017.PNG)
+![VBA_Challenge 2017 with nested do loops.  The code took 0.84375 seconds to run.] (https://github.com/jcsargis00/stock-analysis/blob/main/resources/VBA_Challenge_2017before.PNG)
 #### VBA_CHallenge 2018 before refactoring
+![VBA_Challenge 2018 with nested do loops.  The code took 0.84375 seconds to run.] (https://github.com/jcsargis00/stock-analysis/blob/main/resources/VBA_Challenge_2018before.PNG)
 #### VBA_Challenge 2017 after refactoring
+![VBA_Challenge 2017 with nested do loops.  The code took 0.125 seconds to run.] (https://github.com/jcsargis00/stock-analysis/blob/main/resources/VBA_Challenge_2017.PNG)
 #### VBA_CHallenge 2018 after refactoring 
+![VBA_Challenge 2017 with nested do loops.  The code took 0.125 seconds to run.] (https://github.com/jcsargis00/stock-analysis/blob/main/resources/VBA_Challenge_2018.PNG)
 ## Summary
 ### Advantages and Disadvantages of refactoring code
 My approach to refactoring this code was to go after less nesting levels (do loops), reduce complexity in the conditional statements and reduce the line count.  Specific tasks included:
