@@ -9,5 +9,7 @@
 #### VBA_CHallenge 2018 after refactoring
 ## Summary
 ### Advantages and Disadvantages of refactoring code
+My approach to refactoring this code was to go after less nesting levels (do loops), reduce complexity in the conditional statements and reuce the line count.
+
 ### How do these pros and cons apply to refactoring the original VBA script
 
