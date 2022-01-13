@@ -7,7 +7,7 @@ The first report produced results, but seemed to have room for improvement in te
 less lines of  codes and more efficient run times.  Although it executed and produced accurate report results, by refactoring the code, run times were reduced signficantly, whilst producing the same accurate results.
 Refactoring included creation of arrays to reduce nested loop execution times.   For example, a snippet of the inital code with nested loops looked like this:
 
-'
+`
    For i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
