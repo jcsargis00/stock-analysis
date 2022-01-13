@@ -5,7 +5,7 @@
 ### Images showing table and runtime
 #### VBA_Challenge 2017 before refactoring
 
-![VBA_Challenge 2017 with nested do loops took 0.84375 seconds to run.] (/resources/VBA_Challenge_2017before.PNG)
+![VBA_Challenge 2017 with nested do loops took 0.84375 seconds to run.] (resources/VBA_Challenge_2017before.PNG)
 #### VBA_CHallenge 2018 before refactoring
 ![VBA_Challenge 2018 with nested do loops.  The code took 0.84375 seconds to run.] (https://github.com/jcsargis00/stock-analysis/blob/main/resources/VBA_Challenge_2018before.PNG)
 #### VBA_Challenge 2017 after refactoring
